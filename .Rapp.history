@@ -1,0 +1,31 @@
+library(shiny)
+runExample("01_hello")
+runApp("~/Downloads/Rshinyapp")
+if (!requireNamespace("BiocManager", quietly = TRUE))#
+    install.packages("BiocManager")#
+BiocManager::install("STRINGdb")
+runApp("~/Downloads/Rshinyapp")
+q()
+library(ALPACA)
+vignette("ALPACA")
+browseVignettes()
+remove.packages("ALPACA")
+q()
+library("devtools")#
+#devtools::install_github("klutometis/roxygen")#
+library(roxygen2)#
+#
+setwd("~/Documents/MessagePassing/Package/")
+setwd("./ALPACA")
+install(build_vignettes=T)
+library(ALPACA)
+browseVignettes("ALPACA")
+if(!requireNamespace("BiocManager", quietly = TRUE))#
+    install.packages("BiocManager")#
+BiocManager::install("CoRegFlux")
+library(CoRegFlux)
+if (!requireNamespace("BiocManager", quietly = TRUE))#
+    install.packages("BiocManager")#
+#
+BiocManager::install("CoRegFlux")
+q()
